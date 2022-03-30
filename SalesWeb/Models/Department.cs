@@ -1,8 +1,11 @@
-﻿namespace SalesWeb.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SalesWeb.Models
 {
+    [Table("Department")]
     public class Department
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
     }
 }
